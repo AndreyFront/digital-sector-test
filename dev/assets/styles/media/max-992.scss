@@ -1,1 +1,23 @@
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .main-page {
+        padding: 26px 0;
+
+        &__wrapper-description {
+            padding-top: 35px;
+        }
+
+        .product-slider {
+            &__slider-main,
+            &__slider-thumbs {
+                width: 314px;
+            }
+
+            &__slider-main {
+                .swiper-slide img {
+                    width: 213px;
+                    height: 372px;
+                }
+            }
+        }
+    }
+}

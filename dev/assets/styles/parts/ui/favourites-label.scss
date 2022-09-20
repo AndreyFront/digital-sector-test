@@ -1,0 +1,48 @@
+.favourites-label {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background-color: $color-2;
+    transition: background-color $transition-time;
+
+    &:hover {
+        background-color: $color-1;
+    }
+
+    &:hover &__icon {
+        transform: scale(1.1);
+    }
+
+    &:not([disabled]) {
+        cursor: pointer;
+    }
+
+    &.active {
+        background-color: $color-1;
+
+        .favourites-label {
+            &__icon {
+                transform: scale(1.3);
+
+                use {
+                    fill: $color-4;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        width: 18px;
+        height: 17px;
+        transition: transform $transition-time;
+
+        use {
+            fill: $main-color;
+            transition: fill $transition-time;
+        }
+    }
+}

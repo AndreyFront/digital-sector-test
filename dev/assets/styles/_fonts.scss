@@ -1,6 +1,35 @@
-// @font-face {
-//     font-family: 'Name-font';
-//     font-style: normal;
-//     font-weight: normal;
-//     src: url("../assets/fonts/folder/name-font.woff2") format("woff2");
-// }
+@font-face {
+    font-family: 'FuturaPT';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/FuturaPT/FuturaPT-bold.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: 'FuturaPT';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/FuturaPT/FuturaPT-medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'FuturaPT';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/FuturaPT/FuturaPT-regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Inter/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+}

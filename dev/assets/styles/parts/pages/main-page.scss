@@ -1,0 +1,121 @@
+.main-page {
+    &__wrapper-nav {
+        display: grid;
+        grid-row-gap: 63px;
+        justify-content: center;
+        align-self: start;
+        padding-top: 105px;
+    }
+
+    &__wrapper-slider {
+        // grid-area: slider;
+        display: grid;
+        grid-template-columns: 150px minmax(10px, 396px);
+        grid-column-gap: 67px;
+    }
+
+    &__wrapper-info {
+        // grid-area: info;
+        display: grid;
+        align-self: start;
+        align-items: start;
+        padding-top: 105px;
+    }
+
+    &__wrapper-description {
+        // grid-area: desc;
+        padding-top: 44px;
+    }
+
+    &__block-description {
+        display: grid;
+        grid-row-gap: 15px;
+
+        p {
+            font-size: 18px;
+            line-height: 1.3em;
+            margin: 0;
+        }
+    }
+
+    &__size-btns {
+        display: grid;
+        grid-template-columns: 233px 219px auto;
+        align-items: center;
+
+        .favourites-label {
+            margin-left: auto;
+        }
+    }
+
+    &__wrapper-size {
+        margin-top: 22px;
+    }
+
+    &__wrapper-main-info {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 18px;
+    }
+
+    &__block-info {
+        display: grid;
+    }
+
+    &__block-info-size {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 33px;
+        max-width: 450px;
+    }
+
+    &__name-product {
+        @include adaptiv-font(25, 20);
+        font-family: $secondary-font, sans-serif;
+        font-weight: 700;
+    }
+
+    &__price-product {
+        @include adaptiv-font(18, 16);
+    }
+
+    &__link-back {
+        
+        &:hover .main-page__link-back-icon use {
+            opacity: 1;
+        }
+    }
+
+    &__link-back-icon {
+        width: 15px;
+        height: 10px;
+
+        use {
+            opacity: 0.3;
+            transition: opacity $transition-time;
+        }
+    }
+
+    &__link {
+        transition: opacity $transition-time;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-column-gap: 126px;
+        justify-content: start;
+        // grid-template-areas: 
+        // "slider info"
+        // "slider desc";
+    }
+}

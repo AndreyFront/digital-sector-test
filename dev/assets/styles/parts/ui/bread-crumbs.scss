@@ -1,0 +1,63 @@
+.bread-crumbs {
+    &__list {
+        display: grid;
+        grid-auto-columns: auto;
+        grid-auto-flow: column;
+        justify-content: start;
+    }
+
+    &__li {
+        position: relative;
+
+        &:hover .bread-crumbs__link:not(.bread-crumbs__link--current-page),
+        &:hover .bread-crumbs__link:not(.bread-crumbs__link--current-page) >  .bread-crumbs__icon use {
+            opacity: 1;
+        }
+
+        &--current-page .bread-crumbs__link {
+            opacity: 1;
+        }
+
+        &:first-child {
+            padding-right: 16px;
+        }
+
+        &:not(:first-child) {
+            padding: 0 16px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+            display: block;
+            width: 5px;
+            height: 8px;
+            background-image: url('../images/arrow-right.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        color: $main-color;
+        opacity: 0.3;
+        font-weight: 500;
+        transition: opacity $transition-time;
+    }
+
+    &__icon {
+        width: 14px;
+        height: 14px;
+
+        use {
+            stroke: $main-color;
+            opacity: 0.3;
+            transition: opacity $transition-time;
+        }
+    }
+}

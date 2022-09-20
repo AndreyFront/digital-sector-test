@@ -1,0 +1,66 @@
+.btn {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 8px;
+    padding: 3px 5px;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: transparent;
+    transition: background-color $transition-time, border-color $transition-time;
+
+    &:not([disabled]) {
+        cursor: pointer;
+    }
+
+    &[disabled] {
+        cursor: default;
+        opacity: 0.3;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+
+        use {
+            transition: fill $transition-time, stroke $transition-time;
+        }
+    }
+
+    &__text {
+        transition: color $transition-time;
+    }
+
+    &--size--md {
+        min-height: 49px;
+
+        .btn {
+            &__text {
+                @include adaptiv-font(16, 15);
+            }
+        }
+    }
+
+    &--theme--black {
+        background-color: $main-color;
+
+        &:hover {
+            background-color: $color-1;
+        }
+
+        &:hover .btn__text {
+            color: $main-color;
+        }
+
+        .btn {
+            &__text {
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $color-1;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}

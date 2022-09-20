@@ -13,9 +13,9 @@
 }
 
 .scroll-lock {
-    position: fixed;
-    right: 0;
-    left: 0;
+    // position: fixed;
+    // right: 0;
+    // left: 0;
     overflow: hidden;
 }
 
@@ -24,7 +24,7 @@
 }
 
 a {
-    color: blue;
+    color: $main-color;
 }
 
 .title-reset {

@@ -1,0 +1,15 @@
+.lables {
+    &__list {}
+
+    &__li {
+        display: grid;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+        object-position: center;
+    }
+}

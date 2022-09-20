@@ -7,12 +7,156 @@
     </head>
     <body>
         <div class="wrapper-page">
-            @include('./include/layouts/header.html')
+            <!-- @include('./include/layouts/header.html') -->
             <main class="page main-page">
                 <!-- @include('./include/components/name.html') -->
-                <h2>Main</h2>
+                <div class="main-container max-width">
+                    <div class="main-page__wrapper-slider">
+                        <div class="main-page__wrapper-nav">
+                            <div class="bread-crumbs">
+                                <ul class="bread-crumbs__list list-reset">
+                                    <li class="bread-crumbs__li">
+                                        <a href="#" class="bread-crumbs__link link-reset">
+                                            <svg class="bread-crumbs__icon">
+                                                <use xlink:href="./assets/icons/sprite-svg.svg#home"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="bread-crumbs__li">
+                                        <a href="#" class="bread-crumbs__link link-reset">брюки</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="lables">
+                                <ul class="lables__list list-reset">
+                                    <li class="lables__li">
+                                        <img src="./assets/images/label-1.svg" class="lables__image" alt="">
+                                    </li>
+                                    <li class="lables__li">
+                                        <img src="./assets/images/label-2.svg" class="lables__image" alt="">
+                                    </li>
+                                    <li class="lables__li">
+                                        <img src="./assets/images/label-3.svg" class="lables__image" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-slider" data-product-slider="main">
+                            <div class="swiper product-slider__slider-main" data-product-slider="slider-main">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination" data-product-slider="pagination"></div>
+    
+                            <div thumbsSlider="" class="swiper product-slider__slider-thumbs" data-product-slider="slider-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/product-1.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-page__wrapper-info">
+                        <div class="main-page__wrapper-main-info">
+                            <div class="main-page__block-info">
+                                <span class="main-page__name-product">Пиджак CLASP</span>
+                                <span class="main-page__price-product">27 000 руб.</span>
+                            </div>
+                            <a href="#" class="main-page__link-back">
+                                <svg class="main-page__link-back-icon">
+                                    <use xlink:href="./assets/icons/sprite-svg.svg#arrow-back"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="main-page__wrapper-size">
+                            <div class="main-page__size-btns">
+                                <div class="select" data-select="select">
+                                    <div class="select__block-title" data-select="block-title">
+                                        <span class="select__title" data-select="title">Размер: S</span>
+                                        <svg class="select__icon">
+                                            <use xlink:href="./assets/icons/sprite-svg.svg#arrow-down"/>
+                                        </svg>
+                                    </div>
+                                    <ul class="select__list list-reset" data-select="list">
+                                        <li class="select__li">Размер: M</li>
+                                        <li class="select__li">Размер: L</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn--size--md btn--theme--black">
+                                    <!-- <svg class="btn__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#burger"/>
+                                    </svg> -->
+                                    <span class="btn__text">В корзину</span>
+                                </button>
+                                <button class="favourites-label" data-favourites-label="main">
+                                    <svg class="favourites-label__icon">
+                                        <use xlink:href="./assets/icons/sprite-svg.svg#heart"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="main-page__block-info-size">
+                                <div class="sizes">
+                                    <ul class="sizes__list list-reset">
+                                        <li class="sizes__li sizes__li--no-size">xs</li>
+                                        <li class="sizes__li">s</li>
+                                        <li class="sizes__li">m</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="main-page__link link-reset">Как выбрать размер?</a>
+                            </div>
+                        </div>
+                        <div class="main-page__wrapper-description">
+                            <div class="main-page__block-description">
+                                <p>
+                                    Безупречный пиджак с мужского плеча, на шелковой подкладке с ассиметричным поясом, подчеркивающим талию
+                                    Прекрасно комбинируется с остальными изделиями из коллекции.     
+                                </p>
+        
+                                <p>
+                                    Сочетайте с кожаным топом и брюками для рабочего дня в офисе, или же предайте образу дерзости, оставив его в расстегнутом виде
+                                </p>
+                            </div>
+                            <!-- include js labels -->
+                        </div>
+                    </div>
+                </div>
             </main>
-            @include('./include/layouts/footer.html')
+            <!-- @include('./include/layouts/footer.html') -->
             @include('./include/layouts/scripts.html')
         </div>
     </body>

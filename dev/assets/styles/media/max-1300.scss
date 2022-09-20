@@ -1,0 +1,13 @@
+@media screen and (max-width: 1300px) {
+    .main-page {
+        &__size-btns {
+            .favourites-label {
+                margin-left: 20px;
+            }
+        }
+
+        .main-container {
+            grid-column-gap: 70px;
+        }
+    }
+}
